@@ -16,14 +16,7 @@ A FastAPI-based REST API for loading, viewing, and preprocessing text datasets. 
 
 ## Installation
 
-1. Clone the repository:
-
-```bash
-git clone <repository-url>
-cd fastapi-app
-```
-
-2. Install the required dependencies:
+Install the required dependencies:
 
 ```bash
 pip install -r requirements.txt
@@ -51,40 +44,6 @@ uvicorn main:app --reload
 - `GET /dataset/normalize`: View normalized version of the dataset
 - `GET /dataset/{line_number}`: Get a specific line from the dataset
 
-## Example Requests
-
-### Load Dataset
-
-```bash
-curl -X POST http://localhost:8000/load
-```
-
-Response:
-
-```json
-{
-    "message": "Dataset loaded successfully",
-    "total_lines": 5
-}
-```
-
-### Get Normalized Dataset
-
-```bash
-curl http://localhost:8000/dataset/normalize
-```
-
-
-## Project Structure
-
-```
-fastapi-app/
-├── main.py           # Main FastAPI application
-├── requirements.txt  # Project dependencies
-├── sample.txt       # Sample dataset file
-└── README.md        # Project documentation
-```
-
 ## Dependencies
 
 - FastAPI
@@ -105,20 +64,5 @@ Interactive API documentation is available at:
 - Swagger UI: `http://localhost:8000/docs`
 - ReDoc: `http://localhost:8000/redoc`
 
-## License
 
-This project is licensed under the MIT License - see the LICENSE file for details.
-
-## Contributing
-
-1. Fork the repository
-2. Create your feature branch (`git checkout -b feature/amazing-feature`)
-3. Commit your changes (`git commit -m 'Add some amazing feature'`)
-4. Push to the branch (`git push origin feature/amazing-feature`)
-5. Open a Pull Request
-
-## Contact
-
-Your Name - your.email@example.com
-Project Link: [https://github.com/yourusername/fastapi-app](https://github.com/yourusername/fastapi-app)
 ```
